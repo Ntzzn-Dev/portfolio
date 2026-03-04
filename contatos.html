@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jhonatan-Dev</title>
+  <link rel="icon" type="image/png" href="assets/ntzzn_ic.png">
+  <style>
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 18px;
+      justify-content: center;
+    }
+
+    .contact-item a {
+      color: rgb(202, 200, 200);
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: 100;
+    }
+
+    .me{
+      color: var(--secondary-color);
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <img src="assets/bg_img.png" class="bg">
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contatos.html">Contatos</a>
+      <a href="projetos.html">Projetos</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contatos</h1>
+    <div class="contact-container">
+      <div class="contact-item">
+       <a href="mailto:jhonyhenryck@gmail.com"><span class="me">jhonyhenryck</span>@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <a href="https://github.com/Ntzzn-Dev" target="_blank">github.com/<span class="me">Ntzzn-Dev</span></a>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
