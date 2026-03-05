@@ -36,8 +36,8 @@
         <h1>Musync</h1>
 
         <p><strong>Autor:</strong> Jhonatan | Nathan</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Ntzzn-Dev"
-            target="_blank">https://github.com/Ntzzn-Dev</a>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Ntzzn-Dev/Musync"
+            target="_blank">https://github.com/Ntzzn-Dev/Musync</a>
         </p>
         <p><strong>Data:</strong> 05/07/2025</p>
 
@@ -60,57 +60,99 @@
       </div>
 
     </div>
+    <br>
+    <br>
     <h2>Demonstração</h2>
+    <br>
+    <div class="tabs">
+      <button data-target="android"class="active">Android</button>
+      <button data-target="desktop">Desktop</button>
+    </div>
+      <hr>
 
-    <h3>Android</h3>
+    <div data-tab="android" class="active">
+      <section id="tela-principal">
+        <div class="info-demonstracao">
+          <h3> Tela Principal</h3>
+          <h4>Lista</h4>
+          <p>Nessa tela vemos logo de cara nossa playlist principal.</p>
+          <p>A playlist principal por padrão é a "Todas" que exibe todos os arquivos de áudio encontradas pelo
+            aplicativo,
+            mas há a possibilidade de alterar para uma pasta em específico, ou uma playlist criada por você.</p>
+          <h4>Checkpoint</h4>
+          <p>O botão superior com o icone ▶, serve como um backup, pois o app guarda a ultima playlist e música ouvida
+            antes do app fechar.</p>
+          <p>Após clicar no botão, ou definir uma música como checkpoint, o status muda de 'ultima musica ouvida' para
+            'checkpoint marcado', alterando também o icone para algo parecido com ⊕.</p>
+          <p>Nesse estado o comportamento é praticamente o mesmo, ao clicar no botão, começa a tocar a música marcada
+            com
+            o checkpoint.</p>
+        </div>
+        <div class="gallery two-img">
+          <img src="../assets/documentacao/musync/main_tab.jpg" alt="Tela principal">
+          <img src="../assets/documentacao/musync/main_tab_more_opt.jpg" alt="Opções adicionais">
+        </div>
+      </section>
 
-    <section>
-      <div class="info-demonstracao">
-        <h3> Tela Principal</h3>
-        <h4>Lista</h4>
-        <p>Nessa tela vemos logo de cara nossa playlist principal.</p>
-        <p>A playlist principal por padrão é a "Todas" que exibe todos os arquivos de áudio encontradas pelo aplicativo, mas há a possibilidade de alterar para uma pasta em específico, ou uma playlist criada por você.</p>
-        <h4>Checkpoint</h4>
-        <p>O botão superior com o icone ▶, serve como um backup, pois o app guarda a ultima playlist e música ouvida antes do app fechar.</p>
-        <p>Após clicar no botão, ou definir uma música como checkpoint, o status muda de 'ultima musica ouvida' para 'checkpoint marcado', alterando também o icone para algo parecido com ⊕.</p>
-        <p>Nesse estado o comportamento é praticamente o mesmo, ao clicar no botão, começa a tocar a música marcada com o checkpoint.</p>
-      </div>
-      <div class="gallery two-img">
-        <img src="../assets/documentacao/musync/main_tab.jpg" alt="Tela principal">
-        <img src="../assets/documentacao/musync/main_tab_more_opt.jpg" alt="Opções adicionais">
-      </div>
-    </section>
+      <section id="configuracoes">
+        <div class="info-demonstracao">
+          <h3>Configurações</h3>
+          <p>A tela de configurações possui:</p>
+          <ul>
+            <li>Playlist padrão que a tela de downloads carrega. (link de uma playlist do youtube)</li>
+            <li>Diretórios onde as músicas são baixadas pelo downloader.</li>
+            <li>Botões de reset para <a href="#ups-e-desups">ups & desups</a></li>
+            <li><a href="#modos-de-energia">Modo de energia</a></li>
+          </ul>
+          <p>Na tela de download, a playlist padrão é carregada permitindo a seleção de uma ou mais mídias para download
+            via
+            vídeos do YouTube.</p>
+        </div>
+        <div class="gallery one-img">
+          <img src="../assets/documentacao/musync/config_page.jpg" alt="Configurações">
+        </div>
+      </section>
 
-    <section>
-      <div class="info-demonstracao">
-        <h3> Tela Principal</h3>
-        <h4>Lista</h4>
-        <p>Nessa tela vemos logo de cara nossa playlist principal.</p>
-        <p>A playlist principal por padrão é a "Todas" que exibe todos os arquivos de áudio encontradas pelo aplicativo, mas há a possibilidade de alterar para uma pasta em específico, ou uma playlist criada por você.</p>
-        <h4>Checkpoint</h4>
-        <p>O botão superior com o icone ▶, serve como um backup, pois o app guarda a ultima playlist e música ouvida antes do app fechar.</p>
-        <p>Após clicar no botão, ou definir uma música como checkpoint, o status muda de 'ultima musica ouvida' para 'checkpoint marcado', alterando também o icone para algo parecido com ⊕.</p>
-        <p>Nesse estado o comportamento é praticamente o mesmo, ao clicar no botão, começa a tocar a música marcada com o checkpoint.</p>
-      </div>
-      <div class="gallery one-img">
-        <img src="../assets/documentacao/musync/main_tab.jpg" alt="Tela principal">
-      </div>
-    </section>
+      <section id="downloads">
+        <div class="info-demonstracao">
+          <h3>Downloads</h3>
+          <p>Na tela de configurações são definidos:</p>
+          <ul>
+            <li>Diretórios onde as músicas são baixadas pelo downloader.</li>
+            <li>Playlist padrão que a tela de downloads carrega.</li>
+            <li>Diretórios onde são buscadas as mídias.</li>
+          </ul>
+          <p>Na tela de download, a playlist padrão é carregada permitindo a seleção de uma ou mais mídias para download
+            via
+            vídeos do YouTube.</p>
+        </div>
+        <div class="gallery one-img">
+          <img src="../assets/documentacao/musync/download_page.jpg" alt="Página de downloads">
+        </div>
+      </section>
+
+      <section id="modos-de-energia">
+        <div class="info-demonstracao">
+          <h3>Modos de energia</h3>
+          <p>Na tela de configurações são definidos:</p>
+          <ul>
+            <li>Diretórios onde as músicas são baixadas pelo downloader.</li>
+            <li>Playlist padrão que a tela de downloads carrega.</li>
+            <li>Diretórios onde são buscadas as mídias.</li>
+          </ul>
+          <p>Na tela de download, a playlist padrão é carregada permitindo a seleção de uma ou mais mídias para download
+            via
+            vídeos do YouTube.</p>
+        </div>
+        <div class="gallery one-img">
+          <img src="../assets/documentacao/musync/download_page.jpg" alt="Página de downloads">
+        </div>
+      </section>
+
+    </div>
 
     <!--
-    <h4>Configurações e Downloads</h4>
-    <p>Na tela de configurações são definidos:</p>
-    <ul>
-      <li>Diretórios onde as músicas são baixadas pelo downloader.</li>
-      <li>Playlist padrão que a tela de downloads carrega.</li>
-      <li>Diretórios onde são buscadas as mídias.</li>
-    </ul>
-    <p>Na tela de download, a playlist padrão é carregada permitindo a seleção de uma ou mais mídias para download via
-      vídeos do YouTube.</p>
-    <div class="gallery mob">
-      <img src="../assets/documentacao/musync/config_page.jpg" alt="Configurações">
-      <img src="../assets/documentacao/musync/download_page.jpg" alt="Página de downloads">
-    </div>
+    
 
     <h4>Informações e Opções de Música</h4>
     <div class="gallery mob">
@@ -200,6 +242,7 @@ flutter run</pre>
 
   </div class="conteudo-doc">
 
+  <script src="../js/tabs.js"></script>
   <script src="../js/menu.js"></script>
 </body>
 

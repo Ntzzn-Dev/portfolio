@@ -109,7 +109,7 @@ section * {
   }
 
   &.one-img {
-    flex:0.5;
+    flex: 0.327;
   }
 
   &.one-img img {
@@ -120,6 +120,48 @@ section * {
 .gallery img {
   height: auto;
   object-fit: contain;
+}
+
+/* TABS */
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  background: var(--dark-color);
+  padding: 6px 6px 0 6px;
+  border-radius: 20px 20px 0 0;
+  width: fit-content;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 5px 18px;
+  border: none;
+  border-radius: 15px 15px 0 0;
+  background: transparent;
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+hr {
+  border: 1px solid var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.tabs button:hover, .tabs button.active {
+  background: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+div[data-tab] {
+  display: none;
+}
+
+div[data-tab].active {
+  display: block;
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -143,8 +185,22 @@ section * {
 
 }
 
-
 @media (max-width: 600px) {
+.conteudo-doc{
+  padding: 4em 0;
+}
+
+
+  .tabs {
+    width: 100%;
+  }
+
+  .tabs button {
+    flex: 1;
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
   .apresentacao-doc {
     flex-direction: column;
   }
@@ -152,6 +208,7 @@ section * {
   section {
     flex-direction: column;
   }
+
   .gallery {
     padding: 10px;
   }
