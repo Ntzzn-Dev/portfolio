@@ -1,0 +1,38 @@
+.sobre-mim {
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #371f1f;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  margin: 0 4em;
+}
+
+.sobre-mim p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+.sobre-mim strong {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  .sobre-mim {
+    padding: 35px;
+  }
+
+  .sobre-mim p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .sobre-mim {
+    padding: 40px;
+  }
+
+  .sobre-mim p {
+    font-size: 1.1rem;
+  }
+}

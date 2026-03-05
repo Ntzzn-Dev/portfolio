@@ -53,12 +53,17 @@ h2 {
   transition: left 0.3s ease;
   z-index: 1;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.project-card:focus-within .project-card-inner {
+.project-card:hover .project-card-inner {
   left: 40px;
+}
+
+.project-card:hover{
+  transform: translateY(-10px);
 }
 
 .project-card {
@@ -69,6 +74,7 @@ h2 {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
+  user-select: none;
 }
 
 .project-name-row {
@@ -87,12 +93,12 @@ h2 {
 .project-image {
   width: 100%;
   height: 180px;
-  background: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 20px;
+  position: relative;
 }
 
 .project-image img {
@@ -100,6 +106,7 @@ h2 {
   height: 100%;
   object-fit: contain;
   display: block;
+  background-color: var(--primary-color);
 }
 
 .project-content {
@@ -148,8 +155,8 @@ h2 {
 }
 
 .projects-hint {
-  max-width: 400px;
-  margin: 0 auto 30px auto;
+  max-width: 350px;
+  margin: 0 auto 15px auto;
   padding: 12px 20px;
   border-radius: 12px;
   background: rgba(255,255,255,0.05);
@@ -185,8 +192,7 @@ h2 {
 }
 
 .status-legend {
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin: 30px auto;
   display: flex;
   justify-content: center;
   gap: 15px;

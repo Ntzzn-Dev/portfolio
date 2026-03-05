@@ -1,28 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jhonatan-Dev</title>
   <link rel="icon" type="image/png" href="assets/ntzzn_ic.png">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
+
 <body>
   <img src="assets/bg_img.png" class="bg">
-    <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="contatos.html">Contatos</a>
-            <a href="projetos.html">Projetos</a>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="logo">
+      <img src="assets/ntzzn_ic.png" width="25px">
+      Portfólio
+    </div>
 
-    <main>
-        <h1>JHONATAN</h1>
+    <button class="menu-toggle" id="menu-toggle">
+      ☰
+    </button>
 
-        <div class="links">
-          <div class="link"><a href="https://github.com/Ntzzn-Dev"><img class="link"src="assets/github_ic.png" draggable="false"><h5>GITHUB</h5></img></a></div>
-          </div>
-    </main>
+    <nav id="menu">
+      <a href="index.html" class="active">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contatos.html">Contatos</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>JHONATAN</h1>
+
+    <div class="links">
+      <div class="link">
+        <a href="https://github.com/Ntzzn-Dev">
+          <img class="link" src="assets/github_ic.png" draggable="false">
+          <h5>GITHUB</h5>
+        </img>
+        </a>
+      </div>
+      <div class="link">
+        <a href="www.linkedin.com/in/jhonatan-henryck-014456357">
+          <img class="link" src="assets/linkedin_ic.png" draggable="false">
+          <h5>LINKEDIN</h5>
+        </img>
+        </a>
+      </div>
+    </div>
+  </main>
+  <script src="js/menu.js"></script>
 </body>
+
 </html>

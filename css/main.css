@@ -6,11 +6,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.23);
+  background: #B30000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.288);
+  background: #FF2400;
   height: 10%;
 }
 
@@ -73,30 +73,6 @@ body {
   100%{background-position:4% 0%}
 }
 
-header {
-  width: 100%;
-  padding: 20px ;
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  top: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-  font-size: 18px;
-  transition: 0.3s;
-  background-color: var(--primary-color);
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-nav a:hover {
-  background-color:  var(--secondary-color);
-}
-
 main {
   height: 100vh;
   display: flex;
@@ -113,13 +89,13 @@ h1 {
 }
 
 .links{
-    user-select: none;
-    justify-content: center;
-    position: relative; 
-    width: 100%;
-    z-index: 10;
-    display: flex;
-    height: 35px; 
+  user-select: none;
+  justify-content: center;
+  position: relative; 
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  height: 35px; 
 }
 
 
