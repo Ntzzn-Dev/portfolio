@@ -1,8 +1,10 @@
 .sobre-mim {
   padding: 25px;
   border-radius: 12px;
+  backdrop-filter: blur(4px);
+  background-color: #ff240001;
   border: 1px solid #371f1f;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   margin: 0 4em;
 }
 
@@ -17,22 +19,94 @@
   font-weight: 600;
 }
 
-@media (min-width: 600px) {
-  .sobre-mim {
-    padding: 35px;
-  }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
 
-  .sobre-mim p {
-    font-size: 1.05rem;
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  justify-content: center;
+}
+
+a {
+  color: rgb(202, 200, 200);
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 100;
+}
+
+.me {
+  color: var(--secondary-color);
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-h1 {
+  font-size: 50px;
+  color: var(--primary-color);
+}
+
+.contact-area {
+  display: flex;
+  padding: 2em;
+  backdrop-filter: blur(4px);
+  background-color: #ff240001;
+  border-radius: 13px;
+  margin-top: 12px;
+  border: 1px solid #371f1f;
+  justify-content: space-evenly;
+}
+
+.contact-icons{
+  width: 25px;
+  opacity: 0.8;
+  -webkit-transition: height 0.15s;
+  transition: height 0.15s;
+  -webkit-animation: link-draw 0.3s;
+  -moz-animation: link-draw 0.3s;
+  animation: link-draw 0.3s;
+  animation-fill-mode: both;
+  text-decoration: none; 
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 50px;
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 600px) {
   .sobre-mim {
-    padding: 40px;
+    padding: 35px;
+    margin: 1em;
+
+    p {
+      font-size: 1.05rem;
+    }
   }
 
-  .sobre-mim p {
-    font-size: 1.1rem;
+  main {
+    padding-top: 20em;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .sobre-mim {
+    padding: 40px;
+    margin: 1em;
+
+    p {
+      font-size: 1.1rem;
+    }
   }
 }
