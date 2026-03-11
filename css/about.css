@@ -114,4 +114,7 @@ a {
       font-size: 1.1rem;
     }
   }
+  main {
+    padding-top: 12em;
+  }
 }

@@ -1,6 +1,6 @@
 h2 {
   font-size: 36px;
-  padding:2em 0px 50px 0px;
+  padding: 2em 0px 50px 0px;
   text-align: center;
   color: var(--primary-color);
 }
@@ -29,20 +29,23 @@ h2 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
-  &.solid{
-    background-color: #f3a022; 
+  &.solid {
+    background-color: #f3a022;
     color: black;
   }
-  &.discontinued{
-    background-color: var(--secondary-color); 
+
+  &.discontinued {
+    background-color: var(--secondary-color);
     color: whitesmoke;
   }
-  &.util{
-    background-color: #d2d9df; 
+
+  &.util {
+    background-color: #d2d9df;
     color: black;
   }
-  &.progressing{
-    background-color: #0026ff; 
+
+  &.progressing {
+    background-color: #0026ff;
     color: whitesmoke;
   }
 }
@@ -62,7 +65,7 @@ h2 {
   left: 40px;
 }
 
-.project-card:hover{
+.project-card:hover {
   transform: translateY(-10px);
 }
 
@@ -121,8 +124,8 @@ h2 {
   margin-bottom: 15px;
   line-height: 1.4;
   display: -webkit-box;
-  -webkit-box-orient: vertical; 
-  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -130,18 +133,18 @@ h2 {
 
 .project-name-row h3 {
   display: -webkit-box;
-  -webkit-box-orient: vertical; 
-  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   line-clamp: 1;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   max-width: 250px;
 }
 
-.project-links{
+.project-links {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .project-links a {
@@ -155,16 +158,23 @@ h2 {
   text-decoration: underline;
 }
 
+.project-box-hints {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4em;
+}
+
 .projects-hint {
   max-width: 350px;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 4px auto;
   padding: 12px 20px;
   border-radius: 12px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   text-align: center;
   font-size: 14px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: default;
 }
 
 .legend-item {
@@ -172,22 +182,25 @@ h2 {
   border-radius: 6px;
   font-size: 13px;
   font-weight: bold;
+  cursor: default;
 
-
-  &.solid{
-    background-color: #f3a022; 
+  &.solid {
+    background-color: #f3a022;
     color: black;
   }
-  &.discontinued{
-    background-color: var(--secondary-color); 
+
+  &.discontinued {
+    background-color: var(--secondary-color);
     color: whitesmoke;
   }
-  &.util{
-    background-color: #d2d9df; 
+
+  &.util {
+    background-color: #d2d9df;
     color: black;
   }
-  &.progressing{
-    background-color: #0026ff; 
+
+  &.progressing {
+    background-color: #0026ff;
     color: whitesmoke;
   }
 }
