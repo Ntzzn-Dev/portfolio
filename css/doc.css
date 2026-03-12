@@ -193,6 +193,15 @@ div[data-tab].active {
   font-size: 28px;
 }
 
+.icon-text{
+  display: flex;
+justify-content: space-between;
+
+  img{
+    height: 29px;
+    filter: brightness(0) saturate(100%) invert(44%) sepia(92%) saturate(6987%) hue-rotate(359deg) brightness(99%) contrast(111%);
+  }
+}
 
 @media (max-width: 600px) {
   .conteudo-doc {

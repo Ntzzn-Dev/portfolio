@@ -161,6 +161,35 @@
         </div>
       </section>
 
+      <section id="telas">
+        <div class="info-demonstracao">
+          <h3>Seleção de telas</h3>
+          <h4><a href="#tela-downloads">Download</a></h4>
+          <p>O botão <span class="go-slide" data-slide="0" title="Mostrar imagem dos botões">download [4]</span> leva
+            para a área de download. </p>
+          <h4><a href="#tela-configuracoes">Configurações</a></h4>
+          <p>O botão <span class="go-slide" data-slide="0" title="Mostrar imagem dos botões">Configurações [5]</span>
+            leva para uma tela com configurações simples do aplicativo. </p>
+          <h4><a href="#tela-controle">Super Control</a></h4>
+          <p>O botão <span class="go-slide" data-slide="0" title="Mostrar imagem dos botões">SuperControl [6]</span>
+            leva para uma tela que funciona como um player com botões maiores, ideal para usar como interface de um
+            rádio por exemplo, sem distração, apenas botões e comandos. </p>
+          <h4><a href="#">Connect to Desktop</a></h4>
+          <p>O botão <span class="go-slide" data-slide="0" title="Mostrar imagem dos botões">Connect to Desktop
+              [7]</span>
+            abre a camera para que possa escanear o QRCode gerado na versão de desktop </p>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_principal_pages.jpg" title="Tela principal pra outras paginas"
+                alt="Mudando de telas">
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="tela-principal-checkpoint">
         <div class="info-demonstracao">
           <h3> Tela Principal</h3>
@@ -294,13 +323,20 @@
             por pedaços de 10.</p>
           <p>Nessa tela, após carregar a playlist, torna-se possível <span class="go-slide" data-slide="1"
               title="Mostrar imagem da seleção">selecionar</span> as músicas que deseja fazer o download.</p>
-          <p>Caso queira usar uma playlist diferente da padrão para selecionar músicas, basta colar o link no campo.
-            <br>Caso queira baixar uma faixa em específico, que não está em nenhuma playlist, basta colar o link do
-            video no campo.</p>
-          <p>Após ter selecionado as faixas, deve clicar no botão inferior, que <span class="go-slide" data-slide="2"
+          <p>Caso queira usar uma <span class="go-slide" data-slide="2"
+              title="Mostrar imagem da playlist chamada pelo link manual">playlist diferente</span> da padrão para
+            selecionar músicas, basta colar o link no campo.
+            <br>Caso queira <span class="go-slide" data-slide="3"
+              title="Mostrar imagem do download de uma unica faixa pelo link do video">baixar uma faixa</span> em
+            específico, que não está em nenhuma playlist, basta colar o link do
+            video no campo.
+          </p>
+          <p>Após ter selecionado as faixas, deve clicar no botão inferior, que <span class="go-slide" data-slide="4"
               title="Mostrar imagem do download se iniciando">inicia o download</span>.</p>
           <p>A ordem utilizada é crescente, ou seja da faixa mais antiga à mais atual (de baixo pra cima).</p>
+          <p>Após isso inicia o <a href="#cycle-downloads">ciclo de download</a>, permitindo que saia dessa tela.</p>
         </div>
+
         <div class="carousel">
           <div class="slides">
             <div class="slide center">
@@ -310,6 +346,14 @@
             <div class="slide right">
               <img src="../assets/documentacao/musync/pg_download_select_msc.jpg"
                 title="Selecionando musicas para baixar" alt="Seleção de músicas">
+            </div>
+            <div class="slide next">
+              <img src="../assets/documentacao/musync/pg_download_playlist_link.jpg" title="Acessando playlist via link"
+                alt="Playlist via link">
+            </div>
+            <div class="slide next">
+              <img src="../assets/documentacao/musync/pg_download_msc_link.jpg"
+                title="Baixando música individual via link" alt="Download via link">
             </div>
             <div class="slide left">
               <img src="../assets/documentacao/musync/pg_download_downloading.jpg" title="Baixando musicas selecionadas"
@@ -331,6 +375,156 @@
               </svg>
             </button>
           </div>
+        </div>
+      </section>
+
+      <section id="cycle-downloads">
+        <div class="info-demonstracao">
+          <h3>Ciclo de Downloads</h3>
+          <p>Após ter iniciado os downloads, não se é mais necessário, ficar na mesma tela de downloads, pois as faixas
+            são baixadas de maneira assincrona.</p>
+          <p>Na tela inicial é possivel ver um botão que indica os <span class="go-slide" data-slide="0"
+              title="Mostrar imagem do download iniciado">downloads em processo [8]</span>.</p>
+          <p><span class="go-slide" data-slide="1" title="Mostrar imagem dos detalhes do download">Clicando nesse
+              botão</span> você pode ver o progresso atual de quantas faixas ja foram baixadas.</p>
+          <p>Após concluir todos os downloads que foram selecionados, o botão muda de <span class="go-slide"
+              data-slide="2" title="Mostrar imagem do download finalizado">icone [9]</span> indicando que ja foi
+            finalizado. </p>
+          <p><span class="go-slide" data-slide="3" title="Mostrar imagem da mensagem de finalização">Clicando nesse
+              botão</span> você recebe as músicas baixadas, sem a necessidade de reiniciar o app. </p>
+        </div>
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_principal_downloading.jpg" title="Icone de baixando musicas"
+                alt="Tela principal com download iniciado">
+            </div>
+            <div class="slide right">
+              <img src="../assets/documentacao/musync/pg_principal_download_specs.jpg"
+                title="Detalhes do download em andamento" alt="Tela principal detalhes download">
+            </div>
+            <div class="slide next">
+              <img src="../assets/documentacao/musync/pg_principal_download_concluido.jpg"
+                title="Icone de musicas baixadas" alt="Tela principal com download finalizado">
+            </div>
+            <div class="slide left">
+              <img src="../assets/documentacao/musync/pg_principal_download_message.jpg"
+                title="Recebendo musicas através da mensagem" alt="Mensagem músicas baixadas">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="tela-playlists">
+        <div class="info-demonstracao">
+          <h3>Playlists</h3>
+          <p>Nessa aba, logo ao lado da <a href="#tela-principal">lista principal</a>, ficam as setlists, que nada mais
+            são que um amontoado de diretórios.</p>
+          <p>A <span class="go-slide" data-slide="1" title="Mostrar imagem da ordem de setlists">ordem</span> de
+            setlists sempre será a mesma:</p>
+          <ul>
+            <li>Playlists</li>
+            <li>Pastas</li>
+            <li>Artistas</li>
+          </ul>
+          <p>As playlists são criadas pelo próprio usuário, dando titulo e subtitulo</p>
+          <p>As pastas são divisões automáticas que o app faz, sendo que "/todas" é uma pseudo-pasta que armazena todas
+            as faixas escaneadas pelo aplicativo</p>
+          <p>Abaixo vem todos os artistas de todas as músicas, também são pastas separadas automáticamente pelo app.</p>
+          <p>E assim como na aba principal é possivel buscar por músicas, nessa aba vc <span class="go-slide"
+              data-slide="2" title="Mostrar imagem de pesquisa 'mat'">pesquisa</span> por setlists.</p>
+        </div>
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_principal_playlist_tab.jpg" title="Aba de playlists"
+                alt="Tela principal com playlists">
+            </div>
+            <div class="slide right">
+              <img src="../assets/documentacao/musync/pg_principal_playlist_setlists.jpg" title="Outras listas"
+                alt="Outras listas">
+            </div>
+            <div class="slide left">
+              <img src="../assets/documentacao/musync/pg_principal_playlist_search.jpg" title="Pesquisando playlists"
+                alt="Pesquisando playlists">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="notificacao">
+        <div class="info-demonstracao">
+          <h3>Notificação</h3>
+          <p>Assim que uma música começa a tocar, um player é assinado no android, ficando na barra de notificações.</p>
+          <p>Esse mini player possui alguns comandos simples, que permite manipular o comportamento sem necessidade de
+            abrir o app:</p>
+          <ul>
+            <li>Slider de tempo</li>
+            <li>Shuffle (modo aleatório)</li>
+            <li>Prev (faixa anterior)</li>
+            <li>Play/Pause</li>
+            <li>Next (faixa posterior)</li>
+            <li><a href="#ups-e-desups">Up</a></li>
+          </ul>
+          <p>Caso o aplicativo esteja usando o <a href="#modos-de-energia">modo economico</a>, é possivel que o android
+            mate o processo, mas não retire a notificação. Então mesmo que ainda esteja com nome e foto da ultima faixa
+            na notificação, é necessário reiniciar o app para voltar a funcionar.</p>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/msc_notify.jpg" title="Player na notificação" alt="Notificação">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="notificacao">
+        <div class="info-demonstracao">
+          <h3>Shuffle (modo aleatório)</h3>
+          <p>Modo aleatório padrão com um modo a mais:</p>
+          <div class="icon-text"><h4>Off</h4><img src="../assets/documentacao/musync/ic_random_off.png"></div>
+          <p>Não causa alterações na lista, segue de maneira ordenada</p>
+          <div class="icon-text"><h4>On</h4><img src="../assets/documentacao/musync/ic_random_on.png"></div>
+          <p>Modo padrão, embaralha as músicas aleatóriamente, mas mantém o histórico de músicas ja ouvidas, portanto o shuffle é apenas pra frente (seja dando next manualmente ou automaticamente quando uma faixa termina)</p>
+          <div class="icon-text"><h4>Optional</h4><img src="../assets/documentacao/musync/ic_random_opcional.png"></div>
+          <p>Parecido com o modo padrão, embaralha as músicas aleatóriamente mantendo o histórico, porém ele segue a ordem da lista padrão, e apenas pula para uma música aleatória quando o botão next é apertado. Isso foi feito para que sequencias de músicas pudessem ser reproduzidas em ordem, mas quando chegasse em uma que não estivesse agradando, um unico botão te joga para um lugar aleatório da lista.</p>
+        </div>
+
+        <div class="info-demonstracao">
+          <h3>Repeat</h3>
+          <p>Assim como</p>
         </div>
       </section>
 
