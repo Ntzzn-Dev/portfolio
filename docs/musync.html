@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/doc.css">
+  <link rel="stylesheet" href="../css/images-gallery.css">
 </head>
 
 <body>
@@ -59,13 +60,14 @@
       </div>
     </div>
 
+    <!--
     <div class="popup-alert">
       <div class="glass-box">
         <span class="icon">⚠</span>
         <span class="text">Em construção</span>
       </div>
     </div>
-
+    -->
     <br>
     <br>
     <h2>Demonstração</h2>
@@ -82,27 +84,136 @@
           <h3> Tela Principal</h3>
           <h4>Lista</h4>
           <p>Nessa tela vemos logo de cara nossa playlist principal.</p>
-          <p>A playlist principal por padrão é a "Todas" que exibe todos os arquivos de áudio encontradas pelo
-            aplicativo,
-            mas há a possibilidade de alterar para uma pasta em específico, ou uma playlist criada por você.</p>
-          <h4>Checkpoint</h4>
-          <p>O botão superior com o icone ▶, serve como um backup, pois o app guarda a ultima playlist e música ouvida
-            antes do app fechar.</p>
-          <p>Após clicar no botão, ou definir uma música como checkpoint, o status muda de 'ultima musica ouvida' para
-            'checkpoint marcado', alterando também o icone para algo parecido com ⊕.</p>
-          <p>Nesse estado o comportamento é praticamente o mesmo, ao clicar no botão, começa a tocar a música marcada
-            com
-            o checkpoint.</p>
+          <p>A playlist principal por padrão é a <span class="go-slide" data-slide="0"
+              title="Mostrar imagem da playlist todas">"Todas" [1]</span> que exibe todos os arquivos de áudio
+            encontradas
+            pelo aplicativo.</p>
+          <p>Mas também há a possibilidade de alterar para uma pasta em específico, ou uma <span class="go-slide"
+              data-slide="1" title="Mostrar imagem da playlist criada">playlist criada</span> por
+            você.</p>
+          <h4>Pesquisa</h4>
+          <p>Nessa tela também é possivel pesquisar por músicas que estão na playlist em exibição</p>
+          <p>Apertando na lupa, um <span class="go-slide" data-slide="2"
+              title="Mostrar imagem do campo de pesquisa">campo
+              de texto [2]</span> aparece, possibilitando a pesquisa de músicas presentes na playlist principal.</p>
         </div>
-        <div class="gallery two-img">
-          <img src="../assets/documentacao/musync/main_tab.jpg" alt="Tela principal">
-          <img src="../assets/documentacao/musync/main_tab_more_opt.jpg" alt="Opções adicionais">
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_principal.jpg"
+                title="Tela principal padrão, logo após abrir o app" alt="Tela principal">
+            </div>
+            <div class="slide right">
+              <img src="../assets/documentacao/musync/pg_principal_main_diferent.jpg"
+                title="Tela principal com playlist principal alterada" alt="Playlist principal">
+            </div>
+            <div class="slide left">
+              <img src="../assets/documentacao/musync/pg_principal_flexed.jpg"
+                title="Tela principal com pesquisa ativada e player abaixado" alt="Opções adicionais">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
-      <section id="configuracoes">
+      <section id="tela-principal-player">
         <div class="info-demonstracao">
-          <h3>Configurações</h3>
+          <h3> Tela Principal</h3>
+          <h4>Player</h4>
+          <p>Na tela principal e na tela da playlist, um player simples é exibido na parte inferior, com os controles
+            principais da faixa em execução:</p>
+          <ul>
+            <li>Slider de tempo</li>
+            <li>Shuffle (modo aleatório)</li>
+            <li>Prev (faixa anterior)</li>
+            <li>Play/Pause</li>
+            <li>Next (faixa posterior)</li>
+            <li>Repeat (modo de repetição)</li>
+          </ul>
+          <p>Ao ser clicado em um espaço vazio, o <span class="go-slide" data-slide="1"
+              title="Mostrar imagem do player">player esconde os controles [3]</span>, exibindo apenas o titulo e o
+            autor da
+            faixa.</p>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_principal_flexed.jpg"
+                title="Tela principal com pesquisa ativada e player abaixado" alt="Opções adicionais">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tela-principal-checkpoint">
+        <div class="info-demonstracao">
+          <h3> Tela Principal</h3>
+          <h4>Checkpoint</h4>
+          <p>O botão superior com o icone ▶, serve como um backup, pois o app guarda a ultima playlist e música ouvida
+            antes do app fechar.</p>
+          <p>Após clicar no botão, ou <span class="go-slide" data-slide="1"
+              title="Mostrar imagem marcando uma musica como checkpoint">definir uma música como checkpoint</span>, o
+            status muda de 'ultima musica ouvida' para
+            <span class="go-slide" data-slide="0" title="Mostrar imagem do checkpoint marcado">'checkpoint marcado'
+              [14]</span>, alterando também o icone para algo parecido com ⊕.
+          </p>
+          <p>Nesse estado o comportamento é praticamente o mesmo, ao clicar no botão, começa a <span class="go-slide"
+              data-slide="2" title="Mostrar imagem da música tocando">tocar a música marcada</span>
+            com o checkpoint.</p>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_principal_checkpoint.jpg"
+                title="Tela principal com pesquisa ativada e player abaixado" alt="Opções adicionais">
+            </div>
+            <div class="slide right">
+              <img src="../assets/documentacao/musync/msc_checkpoint.jpg"
+                title="Tela de propriedades de uma faixa com o botão de checkpoint ativo" alt="Opções adicionais">
+            </div>
+            <div class="slide left">
+              <img src="../assets/documentacao/musync/msc_after_checkpoint.jpg"
+                title="Tela principal após clicar no botão de retornar ao checkpoint" alt="Opções adicionais">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="tela-configuracoes">
+        <div class="info-demonstracao">
+          <h3>Tela de Configurações</h3>
           <p>A tela de configurações possui:</p>
           <ul>
             <li>Playlist padrão que a tela de downloads carrega. (link de uma playlist do youtube)</li>
@@ -110,102 +221,121 @@
             <li>Botões de reset para <a href="#ups-e-desups">ups & desups</a></li>
             <li><a href="#modos-de-energia">Modo de energia</a></li>
           </ul>
-          <p>Na tela de download, a playlist padrão é carregada permitindo a seleção de uma ou mais mídias para download
-            via
-            vídeos do YouTube.</p>
+          <p>Na <a href="#tela-downloads">tela de download</a>, a playlist padrão é carregada permitindo a seleção de
+            uma ou
+            mais mídias para download via vídeos do YouTube. Enquanto o diretório para downloads é usado como pasta
+            final para faixas baixadas.</p>
         </div>
-        <div class="gallery one-img">
-          <img src="../assets/documentacao/musync/config_page.jpg" alt="Configurações">
-        </div>
-      </section>
-
-      <section id="downloads">
-        <div class="info-demonstracao">
-          <h3>Downloads</h3>
-          <p>Na tela de configurações são definidos:</p>
-          <ul>
-            <li>Diretórios onde as músicas são baixadas pelo downloader.</li>
-            <li>Playlist padrão que a tela de downloads carrega.</li>
-            <li>Diretórios onde são buscadas as mídias.</li>
-          </ul>
-          <p>Na tela de download, a playlist padrão é carregada permitindo a seleção de uma ou mais mídias para download
-            via
-            vídeos do YouTube.</p>
-        </div>
-        <div class="gallery one-img">
-          <img src="../assets/documentacao/musync/download_page.jpg" alt="Página de downloads">
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_configurations.jpg" title="Tela padrão de configurações"
+                alt="Configurações">
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="modos-de-energia">
         <div class="info-demonstracao">
           <h3>Modos de energia</h3>
-          <p>Na tela de configurações são definidos:</p>
-          <ul>
-            <li>Diretórios onde as músicas são baixadas pelo downloader.</li>
-            <li>Playlist padrão que a tela de downloads carrega.</li>
-            <li>Diretórios onde são buscadas as mídias.</li>
-          </ul>
-          <p>Na tela de download, a playlist padrão é carregada permitindo a seleção de uma ou mais mídias para download
-            via
-            vídeos do YouTube.</p>
+          <h4><span class="go-slide" data-slide="0" title="Mostrar imagem do Modo economico">Modo economico</span></h4>
+          <p>O aplicativo deixa de rodar em segundo plano, portanto caso fique tempo sem estar no foco (tocando musica
+            ou usando o app) o android fecha ele para economizar memória e bateria.</p>
+          <h4><span class="go-slide" data-slide="1" title="Mostrar imagem do Modo balanceado">Modo balanceado</span>
+          </h4>
+          <p>O aplicativo roda em segundo plano por 1 hora, após isso o android pode fecha-lo para economizar memória e
+            bateria.</p>
+          <h4><span class="go-slide" data-slide="2" title="Mostrar imagem do Modo Performance">Modo Performance</span>
+          </h4>
+          <p>O aplicativo fica em segundo plano até que o próprio usuário feche-o, causando assim uma maior consistência
+            de dados, evitando que a musica deixe de ser carregada (precisando abrir novamente), porém possui um gasto
+            maior de bateria.</p>
         </div>
-        <div class="gallery one-img">
-          <img src="../assets/documentacao/musync/download_page.jpg" alt="Página de downloads">
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_configurations_mode_economia.jpg"
+                title="Modo economia de bateria" alt="Modo Economia">
+            </div>
+            <div class="slide right">
+              <img src="../assets/documentacao/musync/pg_configurations_mode_balanceado.jpg"
+                title="Modo balanceado de bateria" alt="Modo balanceado">
+            </div>
+            <div class="slide left">
+              <img src="../assets/documentacao/musync/pg_configurations_mode_performance.jpg" title="Modo performance"
+                alt="Modo performance">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="tela-downloads">
+        <div class="info-demonstracao">
+          <h3>Tela Downloads</h3>
+          <p>Ao abrir a tela de downloads, a sua <span class="go-slide" data-slide="0"
+              title="Mostrar imagem da playlist carregada">playlist do youtube</span>, definido na <a
+              href="#tela-configuracoes">Tela de configurações</a>, é carregada com os 200 primeiros itens, separados
+            por pedaços de 10.</p>
+          <p>Nessa tela, após carregar a playlist, torna-se possível <span class="go-slide" data-slide="1"
+              title="Mostrar imagem da seleção">selecionar</span> as músicas que deseja fazer o download.</p>
+          <p>Caso queira usar uma playlist diferente da padrão para selecionar músicas, basta colar o link no campo.
+            <br>Caso queira baixar uma faixa em específico, que não está em nenhuma playlist, basta colar o link do
+            video no campo.</p>
+          <p>Após ter selecionado as faixas, deve clicar no botão inferior, que <span class="go-slide" data-slide="2"
+              title="Mostrar imagem do download se iniciando">inicia o download</span>.</p>
+          <p>A ordem utilizada é crescente, ou seja da faixa mais antiga à mais atual (de baixo pra cima).</p>
+        </div>
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/musync/pg_download_playlist.jpg" title="Tela de downloads"
+                alt="Tela de downloads">
+            </div>
+            <div class="slide right">
+              <img src="../assets/documentacao/musync/pg_download_select_msc.jpg"
+                title="Selecionando musicas para baixar" alt="Seleção de músicas">
+            </div>
+            <div class="slide left">
+              <img src="../assets/documentacao/musync/pg_download_downloading.jpg" title="Baixando musicas selecionadas"
+                alt="Baixando musicas">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
     </div>
 
-    <!--
-    
-
-    <h4>Informações e Opções de Música</h4>
-    <div class="gallery mob">
-      <img src="../assets/documentacao/musync/music_info.jpg" alt="Informações música">
-      <img src="../assets/documentacao/musync/music_more_opt.jpg" alt="Mais opções">
-    </div>
-
-    <h4>Playlists</h4>
-    <p>Página que controla as playlists, criadas pelo usuário ou separadas por artista.</p>
-    <div class="gallery mob">
-      <img src="../assets/documentacao/musync/playlists_tab.jpg" alt="Playlists">
-      <img src="../assets/documentacao/musync/add_playlist.jpg" alt="Adicionar playlist">
-    </div>
-
-    <h4>Player da Notificação</h4>
-    <p>Na notificação estão as ações mais importantes, incluindo controle de aleatório.</p>
-    <div class="gallery mob">
-      <img src="../assets/documentacao/musync/notify_bar.jpg" alt="Player da notificação">
-    </div>
-
-    <h4>Up / Desup</h4>
-    <p>Agora é possível upar músicas ou desupar, dando prioridade máxima ou mínima na lista.</p>
-
-    <h3>Desktop</h3>
-
-    <h4>Conexão</h4>
-    <p>Para conectar, primeiramente é necessário digitar manualmente o IP local do desktop nas configurações do mobile.
-      Durante a conexão, a versão mobile se apropria de um player avermelhado, que indica que a conexão foi efetuada.
-    </p>
-    <div class="gallery desk">
-      <img src="../assets/documentacao/musync/Inicio.png" alt="Conexão">
-    </div>
-
-    <h4>Recepção</h4>
-    <p>Conforme as músicas são carregadas, um contador exibe a porcentagem e é possível controlar música, volume e
-      posição via smartphone ou desktop usando WebSocket.</p>
-    <div class="gallery desk">
-      <img src="../assets/documentacao/musync/InicioRecebendo2.png" alt="Recepção de músicas">
-    </div>
-
-    <h4>Desconexão</h4>
-    <p>É possível desconectar manualmente ou simplesmente fechando um dos dispositivos.</p>
-    <div class="gallery desk mob">
-      <img src="../assets/documentacao/musync/Desconectar.png" alt="Desconectar">
-      <img src="../assets/documentacao/musync/EkosystemMobile.jpg" alt="Mobile app" style=" width:152px">
-    </div>
-  -->
 
     <h2>Utilização</h2>
     <ol>
@@ -249,6 +379,7 @@ flutter run</pre>
   </div class="conteudo-doc">
 
   <script src="../js/tabs.js"></script>
+  <script src="../js/images-gallery.js"></script>
   <script src="../js/menu.js"></script>
 </body>
 

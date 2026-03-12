@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/doc.css">
+  <link rel="stylesheet" href="../css/images-gallery.css">
 </head>
 
 <body>
@@ -59,6 +60,9 @@
         <span class="icon">⚠</span>
         <span class="text">Em construção</span>
       </div>
+      <div class="return-box">
+        <a class="text" href="../projetos.html">Retornar</a>
+      </div>
     </div>
 
     <section>
@@ -66,9 +70,32 @@
         <h3> Tela Principal</h3>
         <h4>Lista</h4>
       </div>
+      <div class="carousel">
+        <div class="slides">
+          <img src="../assets/documentacao/musync/main_tab.jpg" alt="Tela principal" class="slide center">
+          <img src="../assets/documentacao/musync/main_tab_more_opt.jpg" alt="Opções adicionais" class="slide right">
+        </div>
+
+        <div class="controls">
+          <button class="arrow" id="prev">
+            <svg width="20" height="20" viewBox="0 0 24 24">
+              <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="arrow" id="next">
+            <svg width="20" height="20" viewBox="0 0 24 24">
+              <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </section>
   </div>
 
+  <script src="../js/tabs.js"></script>
+  <script src="../js/images-gallery.js"></script>
   <script src="../js/menu.js"></script>
 </body>
 

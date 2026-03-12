@@ -76,16 +76,17 @@ body {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 4em;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 4em;
   letter-spacing: 3px;
   color: var(--primary-color);
 }
@@ -155,4 +156,10 @@ h1 {
   color:#ffffff00;
   pointer-events: none;
   text-decoration: none; 
+}
+
+@media (max-width: 400px) {
+  h1{ 
+    font-size: 3em;
+  }
 }
