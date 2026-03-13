@@ -31,6 +31,7 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
+  background-color: var(--dark-color);
 }
 
 body {
@@ -83,6 +84,11 @@ main {
   align-items: center;
   text-align: center;
   padding-top: 4em;
+
+  h5{
+    font-style: italic;
+    font-weight: 100;
+  }
 }
 
 h1 {
@@ -98,7 +104,7 @@ h1 {
   width: 100%;
   z-index: 1;
   display: flex;
-  height: 35px; 
+  height: 35px;
 }
 
 
@@ -113,8 +119,8 @@ h1 {
   -moz-animation: link-draw 0.3s;
   animation: link-draw 0.3s;
   animation-fill-mode: both;
-  
-
+  display: flex;
+  flex-direction: column-reverse;
   text-decoration: none; 
   text-align: center;
 }
@@ -123,11 +129,28 @@ h1 {
     text-decoration: none;
 }
 
-.link:hover, .link:hover h5{
-    height: 120%;
-    opacity: 1;
+.link img {
+  transition: transform 0.3s;
+  transform-origin: bottom;
+  height: 35px;
+}
 
-    color:rgba(255, 255, 255, 0.637);
+.link:hover img {
+  transform: scale(1.2);
+}
+
+
+.link h5 {
+  font-size: 16px;
+  padding-top: 8px;
+  color: #ffffff00;
+  transition: transform 0.3s, color 0.4s;
+  pointer-events: none;
+}
+
+.link:hover h5 {
+  transform: translateY(-10px); /* desloca o texto para cima */
+  color: rgba(255, 255, 255, 0.637);
 }
 
 @-webkit-keyframes link-draw {
@@ -158,43 +181,44 @@ h1 {
   text-decoration: none; 
 }
 
-.code-card {
-  position: fixed;
-  top: 200px;
-  left: 100px;
-  font-family: "Fira Code", monospace;
-  font-size: 14px;
-  background: #0d1117;
-  color: #c9d1d9;
-  z-index: 2;
-  padding: 20px 24px;
-  border-radius: 8px;
-
-  border: 1px solid #30363d;
-  user-select: none;
-  width: fit-content;
-  line-height: 1.6;
-  cursor: grab;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  text-align: justify;
+.link-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: stretch;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.code-card:active {
-  cursor: grabbing;
-}
-
-.code-card a {
-  color: var(--secondary-color);
-  font-weight: 900;
+.page-link {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
   text-decoration: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.code-card a:hover {
-  text-decoration: underline;
+.page-link:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.key { color: #79c0ff; }
-.string { color: #a5d6ff; }
+@media (max-width: 500px) {
+  .link-row {
+  grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .page-link {
+    width: 150px;
+    text-align: center;
+  }
+}
 
 @media (max-width: 400px) {
   h1{ 

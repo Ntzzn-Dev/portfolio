@@ -60,14 +60,6 @@
       </div>
     </div>
 
-    <!--
-    <div class="popup-alert">
-      <div class="glass-box">
-        <span class="icon">⚠</span>
-        <span class="text">Em construção</span>
-      </div>
-    </div>
-    -->
     <br>
     <br>
     <h2>Demonstração</h2>
@@ -82,20 +74,27 @@
       <section id="tela-principal">
         <div class="info-demonstracao">
           <h3> Tela Principal</h3>
-          <h4>Lista</h4>
-          <p>Nessa tela vemos logo de cara nossa playlist principal.</p>
-          <p>A playlist principal por padrão é a <span class="go-slide" data-slide="0"
-              title="Mostrar imagem da playlist todas">"Todas" [1]</span> que exibe todos os arquivos de áudio
-            encontradas
-            pelo aplicativo.</p>
-          <p>Mas também há a possibilidade de alterar para uma pasta em específico, ou uma <span class="go-slide"
-              data-slide="1" title="Mostrar imagem da playlist criada">playlist criada</span> por
-            você.</p>
-          <h4>Pesquisa</h4>
-          <p>Nessa tela também é possivel pesquisar por músicas que estão na playlist em exibição</p>
-          <p>Apertando na lupa, um <span class="go-slide" data-slide="2"
-              title="Mostrar imagem do campo de pesquisa">campo
-              de texto [2]</span> aparece, possibilitando a pesquisa de músicas presentes na playlist principal.</p>
+          <div class="img-select" img-select="0">
+            <h4>Lista</h4>
+            <p>Nessa tela vemos logo de cara nossa playlist principal.</p>
+            <p>A playlist principal por padrão é a <span class="go-slide" data-slide="0"
+                title="Mostrar imagem da playlist todas">"Todas" [1]</span> que exibe todos os arquivos de áudio
+              encontradas
+              pelo aplicativo.</p>
+          </div>
+
+          <div class="img-select" img-select="1">
+            <p>Mas também há a possibilidade de alterar para uma pasta em específico, ou uma <span class="go-slide"
+                data-slide="1" title="Mostrar imagem da playlist criada">playlist criada</span> por
+              você.</p>
+          </div>
+          <div class="img-select" img-select="2">
+            <h4>Pesquisa</h4>
+            <p>Nessa tela também é possivel pesquisar por músicas que estão na playlist em exibição</p>
+            <p>Apertando na lupa, um <span class="go-slide" data-slide="2"
+                title="Mostrar imagem do campo de pesquisa">campo
+                de texto [2]</span> aparece, possibilitando a pesquisa de músicas presentes na playlist principal.</p>
+          </div>
         </div>
 
         <div class="carousel">
@@ -196,15 +195,19 @@
           <h4>Checkpoint</h4>
           <p>O botão superior com o icone ▶, serve como um backup, pois o app guarda a ultima playlist e música ouvida
             antes do app fechar.</p>
-          <p>Após clicar no botão, ou <span class="go-slide" data-slide="1"
-              title="Mostrar imagem marcando uma musica como checkpoint">definir uma música como checkpoint</span>, o
-            status muda de 'ultima musica ouvida' para
-            <span class="go-slide" data-slide="0" title="Mostrar imagem do checkpoint marcado">'checkpoint marcado'
-              [14]</span>, alterando também o icone para algo parecido com ⊕.
+
+          <p><span class="text-highlight" img-select="1">Após clicar no botão, ou <span class="go-slide" data-slide="1"
+                title="Mostrar imagem marcando uma musica como checkpoint">definir uma música como checkpoint</span>, o
+              status muda de 'ultima musica ouvida'</span> <span class="text-highlight" img-select="0">para
+              <span class="go-slide" data-slide="0" title="Mostrar imagem do checkpoint marcado">'checkpoint marcado'
+                [14]</span>, alterando também o icone para algo parecido com ⊕.</span>
           </p>
-          <p>Nesse estado o comportamento é praticamente o mesmo, ao clicar no botão, começa a <span class="go-slide"
-              data-slide="2" title="Mostrar imagem da música tocando">tocar a música marcada</span>
-            com o checkpoint.</p>
+
+          <div class="img-select" img-select="2">
+            <p>Nesse estado o comportamento é praticamente o mesmo, ao clicar no botão, começa a <span class="go-slide"
+                data-slide="2" title="Mostrar imagem da música tocando">tocar a música marcada</span>
+              com o checkpoint.</p>
+          </div>
         </div>
 
         <div class="carousel">
@@ -267,19 +270,28 @@
 
       <section id="modos-de-energia">
         <div class="info-demonstracao">
-          <h3>Modos de energia</h3>
-          <h4><span class="go-slide" data-slide="0" title="Mostrar imagem do Modo economico">Modo economico</span></h4>
-          <p>O aplicativo deixa de rodar em segundo plano, portanto caso fique tempo sem estar no foco (tocando musica
-            ou usando o app) o android fecha ele para economizar memória e bateria.</p>
-          <h4><span class="go-slide" data-slide="1" title="Mostrar imagem do Modo balanceado">Modo balanceado</span>
-          </h4>
-          <p>O aplicativo roda em segundo plano por 1 hora, após isso o android pode fecha-lo para economizar memória e
-            bateria.</p>
-          <h4><span class="go-slide" data-slide="2" title="Mostrar imagem do Modo Performance">Modo Performance</span>
-          </h4>
-          <p>O aplicativo fica em segundo plano até que o próprio usuário feche-o, causando assim uma maior consistência
-            de dados, evitando que a musica deixe de ser carregada (precisando abrir novamente), porém possui um gasto
-            maior de bateria.</p>
+          <div class="img-select" img-select="0">
+            <h3>Modos de energia</h3>
+            <h4><span class="go-slide" data-slide="0" title="Mostrar imagem do Modo economico">Modo economico</span>
+            </h4>
+            <p>O aplicativo deixa de rodar em segundo plano, portanto caso fique tempo sem estar no foco (tocando musica
+              ou usando o app) o android fecha ele para economizar memória e bateria.</p>
+          </div>
+          <div class="img-select" img-select="1">
+            <h4><span class="go-slide" data-slide="1" title="Mostrar imagem do Modo balanceado">Modo balanceado</span>
+            </h4>
+            <p>O aplicativo roda em segundo plano por 1 hora, após isso o android pode fecha-lo para economizar memória
+              e
+              bateria.</p>
+          </div>
+          <div class="img-select" img-select="2">
+            <h4><span class="go-slide" data-slide="2" title="Mostrar imagem do Modo Performance">Modo Performance</span>
+            </h4>
+            <p>O aplicativo fica em segundo plano até que o próprio usuário feche-o, causando assim uma maior
+              consistência
+              de dados, evitando que a musica deixe de ser carregada (precisando abrir novamente), porém possui um gasto
+              maior de bateria.</p>
+          </div>
         </div>
         <div class="carousel">
           <div class="slides">
@@ -317,24 +329,35 @@
       <section id="tela-downloads">
         <div class="info-demonstracao">
           <h3>Tela Downloads</h3>
-          <p>Ao abrir a tela de downloads, a sua <span class="go-slide" data-slide="0"
-              title="Mostrar imagem da playlist carregada">playlist do youtube</span>, definido na <a
-              href="#tela-configuracoes">Tela de configurações</a>, é carregada com os 200 primeiros itens, separados
-            por pedaços de 10.</p>
-          <p>Nessa tela, após carregar a playlist, torna-se possível <span class="go-slide" data-slide="1"
-              title="Mostrar imagem da seleção">selecionar</span> as músicas que deseja fazer o download.</p>
-          <p>Caso queira usar uma <span class="go-slide" data-slide="2"
+          <div class="img-select" img-select="0">
+            <p>Ao abrir a tela de downloads, a sua <span class="go-slide" data-slide="0"
+                title="Mostrar imagem da playlist carregada">playlist do youtube</span>, definido na <a
+                href="#tela-configuracoes">Tela de configurações</a>, é carregada com os 200 primeiros itens, separados
+              por pedaços de 10.</p>
+          </div>
+
+          <div class="img-select" img-select="1">
+            <p>Nessa tela, após carregar a playlist, torna-se possível <span class="go-slide" data-slide="1"
+                title="Mostrar imagem da seleção">selecionar</span> as músicas que deseja fazer o download.</p>
+          </div>
+
+          <p>
+          <div class="img-select" img-select="2">Caso queira usar uma <span class="go-slide" data-slide="2"
               title="Mostrar imagem da playlist chamada pelo link manual">playlist diferente</span> da padrão para
-            selecionar músicas, basta colar o link no campo.
-            <br>Caso queira <span class="go-slide" data-slide="3"
+            selecionar músicas, basta colar o link no campo.</div>
+          <br>
+          <div class="img-select" img-select="3"> Caso queira <span class="go-slide" data-slide="3"
               title="Mostrar imagem do download de uma unica faixa pelo link do video">baixar uma faixa</span> em
             específico, que não está em nenhuma playlist, basta colar o link do
-            video no campo.
+            video no campo.</div>
           </p>
-          <p>Após ter selecionado as faixas, deve clicar no botão inferior, que <span class="go-slide" data-slide="4"
-              title="Mostrar imagem do download se iniciando">inicia o download</span>.</p>
-          <p>A ordem utilizada é crescente, ou seja da faixa mais antiga à mais atual (de baixo pra cima).</p>
-          <p>Após isso inicia o <a href="#cycle-downloads">ciclo de download</a>, permitindo que saia dessa tela.</p>
+
+          <div class="img-select" img-select="4">
+            <p>Após ter selecionado as faixas, deve clicar no botão inferior, que <span class="go-slide" data-slide="4"
+                title="Mostrar imagem do download se iniciando">inicia o download</span>.</p>
+            <p>A ordem utilizada é crescente, ou seja da faixa mais antiga à mais atual (de baixo pra cima).</p>
+            <p>Após isso inicia o <a href="#cycle-downloads">ciclo de download</a>, permitindo que saia dessa tela.</p>
+          </div>
         </div>
 
         <div class="carousel">
@@ -381,17 +404,29 @@
       <section id="cycle-downloads">
         <div class="info-demonstracao">
           <h3>Ciclo de Downloads</h3>
-          <p>Após ter iniciado os downloads, não se é mais necessário, ficar na mesma tela de downloads, pois as faixas
-            são baixadas de maneira assincrona.</p>
-          <p>Na tela inicial é possivel ver um botão que indica os <span class="go-slide" data-slide="0"
-              title="Mostrar imagem do download iniciado">downloads em processo [8]</span>.</p>
-          <p><span class="go-slide" data-slide="1" title="Mostrar imagem dos detalhes do download">Clicando nesse
-              botão</span> você pode ver o progresso atual de quantas faixas ja foram baixadas.</p>
-          <p>Após concluir todos os downloads que foram selecionados, o botão muda de <span class="go-slide"
-              data-slide="2" title="Mostrar imagem do download finalizado">icone [9]</span> indicando que ja foi
-            finalizado. </p>
-          <p><span class="go-slide" data-slide="3" title="Mostrar imagem da mensagem de finalização">Clicando nesse
-              botão</span> você recebe as músicas baixadas, sem a necessidade de reiniciar o app. </p>
+          <div class="img-select" img-select="0">
+            <p>Após ter iniciado os downloads, não se é mais necessário, ficar na mesma tela de downloads, pois as
+              faixas
+              são baixadas de maneira assincrona.</p>
+            <p>Na tela inicial é possivel ver um botão que indica os <span class="go-slide" data-slide="0"
+                title="Mostrar imagem do download iniciado">downloads em processo [8]</span>.
+            </p>
+          </div>
+
+          <div class="img-select" img-select="1">
+            <p><span class="go-slide" data-slide="1" title="Mostrar imagem dos detalhes do download">Clicando nesse
+                botão</span> você pode ver o progresso atual de quantas faixas ja foram baixadas.</p>
+          </div>
+          <div class="img-select" img-select="2">
+            <p>Após concluir todos os downloads que foram selecionados, o botão muda de <span class="go-slide"
+                data-slide="2" title="Mostrar imagem do download finalizado">icone [9]</span> indicando que ja foi
+              finalizado. </p>
+          </div>
+
+          <div class="img-select" img-select="3">
+            <p><span class="go-slide" data-slide="3" title="Mostrar imagem da mensagem de finalização">Clicando nesse
+                botão</span> você recebe as músicas baixadas, sem a necessidade de reiniciar o app. </p>
+          </div>
         </div>
         <div class="carousel">
           <div class="slides">
@@ -435,19 +470,25 @@
           <h3>Playlists</h3>
           <p>Nessa aba, logo ao lado da <a href="#tela-principal">lista principal</a>, ficam as setlists, que nada mais
             são que um amontoado de diretórios.</p>
-          <p>A <span class="go-slide" data-slide="1" title="Mostrar imagem da ordem de setlists">ordem</span> de
-            setlists sempre será a mesma:</p>
-          <ul>
-            <li>Playlists</li>
-            <li>Pastas</li>
-            <li>Artistas</li>
-          </ul>
+
+          <div class="img-select" img-select="1">
+            <p>A <span class="go-slide" data-slide="1" title="Mostrar imagem da ordem de setlists">ordem</span> de
+              setlists sempre será a mesma:</p>
+            <ul>
+              <li>Playlists</li>
+              <li>Pastas</li>
+              <li>Artistas</li>
+            </ul>
+          </div>
           <p>As playlists são criadas pelo próprio usuário, dando titulo e subtitulo</p>
           <p>As pastas são divisões automáticas que o app faz, sendo que "/todas" é uma pseudo-pasta que armazena todas
             as faixas escaneadas pelo aplicativo</p>
           <p>Abaixo vem todos os artistas de todas as músicas, também são pastas separadas automáticamente pelo app.</p>
-          <p>E assim como na aba principal é possivel buscar por músicas, nessa aba vc <span class="go-slide"
-              data-slide="2" title="Mostrar imagem de pesquisa 'mat'">pesquisa</span> por setlists.</p>
+
+          <div class="img-select" img-select="2">
+            <p>E assim como na aba principal é possivel buscar por músicas, nessa aba vc <span class="go-slide"
+                data-slide="2" title="Mostrar imagem de pesquisa 'mat'">pesquisa</span> por setlists.</p>
+          </div>
         </div>
         <div class="carousel">
           <div class="slides">
@@ -510,21 +551,33 @@
         </div>
       </section>
 
-      <section id="notificacao">
+      <section id="shuffle-and-repeat">
         <div class="info-demonstracao">
           <h3>Shuffle (modo aleatório)</h3>
           <p>Modo aleatório padrão com um modo a mais:</p>
-          <div class="icon-text"><h4>Off</h4><img src="../assets/documentacao/musync/ic_random_off.png"></div>
+          <div class="icon-text">
+            <h4>Off</h4><img src="../assets/documentacao/musync/ic_random_off.png">
+          </div>
           <p>Não causa alterações na lista, segue de maneira ordenada</p>
-          <div class="icon-text"><h4>On</h4><img src="../assets/documentacao/musync/ic_random_on.png"></div>
-          <p>Modo padrão, embaralha as músicas aleatóriamente, mas mantém o histórico de músicas ja ouvidas, portanto o shuffle é apenas pra frente (seja dando next manualmente ou automaticamente quando uma faixa termina)</p>
-          <div class="icon-text"><h4>Optional</h4><img src="../assets/documentacao/musync/ic_random_opcional.png"></div>
-          <p>Parecido com o modo padrão, embaralha as músicas aleatóriamente mantendo o histórico, porém ele segue a ordem da lista padrão, e apenas pula para uma música aleatória quando o botão next é apertado. Isso foi feito para que sequencias de músicas pudessem ser reproduzidas em ordem, mas quando chegasse em uma que não estivesse agradando, um unico botão te joga para um lugar aleatório da lista.</p>
+          <div class="icon-text">
+            <h4>On</h4><img src="../assets/documentacao/musync/ic_random_on.png">
+          </div>
+          <p>Modo padrão, embaralha as músicas aleatóriamente, mas mantém o histórico de músicas ja ouvidas, portanto o
+            shuffle é apenas pra frente (seja dando next manualmente ou automaticamente quando uma faixa termina)</p>
+          <div class="icon-text">
+            <h4>Optional</h4><img src="../assets/documentacao/musync/ic_random_opcional.png">
+          </div>
+          <p>Parecido com o modo padrão, embaralha as músicas aleatóriamente mantendo o histórico, porém ele segue a
+            ordem
+            da lista padrão, e apenas pula para uma música aleatória quando o botão next é apertado. Isso foi feito para
+            que
+            sequencias de músicas pudessem ser reproduzidas em ordem, mas quando chegasse em uma que não estivesse
+            agradando, um unico botão te joga para um lugar aleatório da lista.</p>
         </div>
 
         <div class="info-demonstracao">
           <h3>Repeat</h3>
-          <p>Assim como</p>
+          <p>Assim como o modo aleatório</p>
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 document.querySelectorAll(".carousel").forEach(carousel => {
   const slides = carousel.querySelectorAll(".slide");
+  const textBackground = carousel.parentNode.querySelectorAll(".img-select, .text-highlight");
   const btnNext = carousel.querySelector(".next-btn");
   const btnPrev = carousel.querySelector(".prev-btn");
   let index = 0;
@@ -42,6 +43,14 @@ document.querySelectorAll(".carousel").forEach(carousel => {
 
   function goTo(targetIndex) {
     index = ((targetIndex % slides.length) + slides.length) % slides.length;
+    textBackground.forEach(s => {
+      console.log(s);
+      
+      s.classList.remove("active");
+      if (s.getAttribute("img-select") == index) {
+        s.classList.add("active");
+      }
+    });
     update();
   }
 
@@ -56,6 +65,8 @@ document.querySelectorAll(".carousel").forEach(carousel => {
       goTo(index - 1);
     });
   }
+
+  goTo(0);
 
   carousel.goTo = goTo;
 });
