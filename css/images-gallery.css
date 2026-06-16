@@ -31,6 +31,10 @@
   filter: none;
 }
 
+.full {
+  width: 98%;
+}
+
 .right {
   width: 200px;
   transform: translate(20%, -50%) rotate(15deg) scale(.9);

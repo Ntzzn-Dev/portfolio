@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brecho SIB - Documentação</title>
+  <link rel="icon" type="image/png" href="../assets/ntzzn_ic.png">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/doc.css">
+  <link rel="stylesheet" href="../css/images-gallery.css">
+</head>
+
+<body>
+  <img src="../assets/bg_img.png" class="bg" alt="Background">
+
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html" style="display: flex;"><img src="../assets/ntzzn_ic.png" width="25px"></a>
+      Documentação: Brecho SIB
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <nav id="menu">
+      <a href="../index.html">Início</a>
+      <a href="../projetos.html" class="active">Projetos</a>
+      <a href="../sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <div class="conteudo-doc">
+    <div class="apresentacao-doc">
+      <div class="info-apresentacao-doc">
+        <h1>Postit Simulator</h1>
+
+        <p><strong>Autor:</strong> Jhonatan | Nathan</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Ntzzn-Dev/brechoSIB"
+            target="_blank">https://github.com/Ntzzn-Dev/brechoSIB</a>
+        </p>
+        <p><strong>Data:</strong> 13/05/2026</p>
+
+        <div class="badges">
+          <img class="badge"
+            src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"
+            alt="Java">
+
+          <img class="badge"
+            src="https://img.shields.io/badge/JDK-17+-007396?style=for-the-badge&logo=openjdk&logoColor=white"
+            alt="JDK 17+">
+
+          <img class="badge"
+            src="https://img.shields.io/badge/Console%20Application-Terminal-4D4D4D?style=for-the-badge&logo=gnometerminal&logoColor=white"
+            alt="Aplicação de Console">
+        </div>
+      </div>
+      <div class="desc-apresentacao-doc">
+        <h2>Descrição</h2>
+        <p>Um programa criado com intuito de estudo e conclusão do projeto de extensão de curso de Informática para negócios da Fatec.
+          O Sistema serve como um suporte para vendas de um brechó.</p>
+        <p>O projeto conta com um banco de dados fake [Sem uso de SQL ou qualquer tipo de armazenamento de dados sofisticado]
+          Possui um CRUD para quase todas as entidades, possibilitando um sistema completo no terminal.</p>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <h2>Demonstração</h2>
+    <br>
+    <hr>
+
+    <div class="tabs">
+      <button data-target="cdi" class="active">CDI</button>
+      <button data-target="business-rules">Regras de negócio</button>
+    </div>
+    <hr>
+
+    <div data-tab="business-rules">
+      <section id="tela-principal">
+        <div class="info-demonstracao">
+          <h3>Tela de login</h3>
+            <h4>Login</h4>
+            <p>Apenas o funcionário possui acesso ao programa, tornando-se necessário apenas o login de funcionários.</p>
+            <p>Todo funcionário deverá fazer login usando o CPF e senha definidos na hora do cadastro.</p>
+        </div>
+      </section>
+    </div>
+
+    <div data-tab="cdi" class="active">
+      <section id="tela-principal">
+        <div class="info-demonstracao">
+          <h3>Tela de login</h3>
+            <h4>Login</h4>
+            <p>Assim que executamos o projeto, primeiro é necessário fazer o login.</p>
+            <p>A interface pede apenas o CPF e a senha, previamente definidos.</p>
+            <p>Ao entrar, o nome do funcionário é exibido, ele é quem vai ficar marcado ao executar vendas</p>
+          <h3>Tela principal</h3>
+            <h4>Menu</h4>
+            <p>A tela do menu exibe as principais entidades permitindo algumas ações padrões ao funcionário:</p>
+            <ul>
+              <li>Create (Cadastro)</li>
+              <li>Read   (Busca)</li>
+              <li>Update (Atualização)</li>
+              <li>Delete (Remoção)</li>
+              <li>List   (Listagem)</li>
+            </ul>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center">
+              <img src="../assets/documentacao/brechoSIB/LoginMenu.jpg"
+                title="Tela inicial forçando a um login" alt="Login">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div class="conteudo-doc">
+
+  <script src="../js/tabs.js"></script>
+  <script src="../js/images-gallery.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+
+</html>

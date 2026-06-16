@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postit Simulator - Documentação</title>
+  <link rel="icon" type="image/png" href="../assets/ntzzn_ic.png">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/doc.css">
+  <link rel="stylesheet" href="../css/images-gallery.css">
+</head>
+
+<body>
+  <img src="../assets/bg_img.png" class="bg" alt="Background">
+
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html" style="display: flex;"><img src="../assets/ntzzn_ic.png" width="25px"></a>
+      Documentação: Postit Simulator
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <nav id="menu">
+      <a href="../index.html">Início</a>
+      <a href="../projetos.html" class="active">Projetos</a>
+      <a href="../sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <div class="conteudo-doc">
+    <div class="apresentacao-doc">
+      <div class="info-apresentacao-doc">
+        <h1>Postit Simulator</h1>
+
+        <p><strong>Autor:</strong> Jhonatan | Nathan</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Ntzzn-Dev/postit-sim"
+            target="_blank">https://github.com/Ntzzn-Dev/postit-sim</a>
+        </p>
+        <p><strong>Data:</strong> 25/04/2026</p>
+
+        <div class="badges">
+          <img class="badge"
+            src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=windows&logoColor=white"
+            alt="WPF">
+
+          <img class="badge"
+            src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"
+            alt="C#">
+
+          <img class="badge"
+            src="https://img.shields.io/badge/Windows-Supported-0078D6?style=for-the-badge&logo=windows&logoColor=white"
+            alt="Plataforma suportada">
+        </div>
+      </div>
+      <div class="desc-apresentacao-doc">
+        <h2>Descrição</h2>
+        <p>Um projeto simples de Post-it digital desenvolvido para organizar ideias, tarefas e lembretes de forma prática e intuitiva, mantendo os marcadores sempre acima da tela para não se perder em abas, e a guardando de forma simples.</p>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <h2>Demonstração</h2>
+    <br>
+    <hr>
+
+    <div data-tab="windows" class="active">
+      <section id="tela-principal">
+        <div class="info-demonstracao">
+          <h3>Post-it inicial</h3>
+            <h4>Post-it</h4>
+            <p>Assim que executamos o projeto, um post-it se abre na tela.</p>
+            <p>A janela possui propriedades para simular um post-it real:</p>
+            <ul>
+              <li>Estático sobre todas as janelas, para evitar perda de foco</li>
+              <li>Pequeno, para anotações curtas</li>
+              <li>Coloridos, para melhor identificação visual</li>
+              <li>Simples, para maior eficiência</li>
+            </ul>
+            <h4>UX</h4>
+            <p>No topo da janela temos 4 utilidades principais:</p>
+            <ul>
+              <li>+ -> Para instânciar um novo post-it</li>
+              <li>Titulo</li>
+              <li>- -> Para minimizar o post-it e diminuir a área de ocupação na tela</li>
+              <li>x -> Para fechar o post-it</li>
+            </ul>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center full">
+              <img src="../assets/documentacao/postit-sim/Inicio.jpg"
+                title="Post-it padrão, ao iniciar pela primeira vez" alt="Post-it">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tela-principal-options">
+        <div class="info-demonstracao">
+          <h3>Opções adicionais</h3>
+          <h4>Opções</h4>
+          <p>Ao clicar com o botão direito sobre o post-it, um menu aparece com as seguintes opções:</p>
+          <ul>
+            <li>Cores pasteis principais</li>
+            <li>Icones, que são exibidos quando o post-it é minimizado</li>
+            <li>Salvar/Salvar como, gera um arquivo .txt</li>
+            <li>Abrir, suporta arquivos .txt</li>
+            <li>Excluir, limpa toda a mensagem do post-it, e fecha caso n tenha nenhum conteúdo</li>
+            <li>Nova <a href="#polaroid">polaroid</a>, abre uma nova instância de polaroid</li>
+            <li>Novo post-it, abre uma nova instância post-it</li>
+          </ul>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center full">
+              <img src="../assets/documentacao/postit-sim/MoreOpt.jpg"
+                title="Post-it com menu de mais opçoes" alt="Opções adicionais">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="post-its">
+        <div class="info-demonstracao">
+          <h3>Varios Post-its</h3>
+          <h4>Instâncias</h4>
+          <span class="text-highlight" img-select="0"><p>O post-it não é limitado a apenas um bloco de anotação, cada bloco tem sua cor e propósito diferentes, podendo ser tratados individualmente. As cores principais são:</p>
+            <ul>
+              <li>Amarelo pastel</li>
+              <li>Translucido</li>
+              <li>Laranja pastel</li>
+              <li>Rosa pastel</li>
+              <li>Verde pastel</li>
+              <li>Azul pastel</li>
+              <li>Vermelho pastel</li>
+            </ul>
+          </span>
+          <h4>TopMost</h4>
+          <span class="text-highlight" img-select="1"><p>O post-it possui também a propriedade de sobreposição, onde sempre ficará no topo evitando que a anotação saia de vista</p></span>
+        </div>
+
+         <div class="carousel">
+          <div class="slides">
+            <div class="slide center full">
+              <img src="../assets/documentacao/postit-sim/MoreWindows.jpg"
+                title="Tela com mais de um post-it" alt="Varios post-its">
+            </div>
+            <div class="slide right full">
+              <img src="../assets/documentacao/postit-sim/TopMost.jpg"
+                title="Post-its sempre acima de qualquer janela" alt="Top Most">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="minimize-notes">
+        <div class="info-demonstracao">
+          <h3>Post-its Minimizados</h3>
+          <h4>Minimizar</h4>
+          <p>Um post-it pode ser minimizado de duas formas, seja arrastando a janela até uma das bordas da tela, ou apertando no botão de minimizar no cabeçalho da janela.</p>
+          <p>Ao minimizar o post-it diminui seu tamanho, tornando-se um triangulo pequeno que pode ser amontoado nas beiradas da tela, evitando que fiquem atrapalhando a visão de algo importante.</p>
+          <p>Para sair do modo minimizado, basta clicar sobre o post-it</p>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center full">
+              <img src="../assets/documentacao/postit-sim/MinimizeNotes.jpg"
+                title="Aparencia que as notas tomam ao ser minimizadas" alt="Notas Minimizadas">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="polaroid">
+        <div class="info-demonstracao">
+          <h3>Polaroid</h3>
+          <p>Essa tela serve mais como um quadro, mantendo as caracteristicas principais do post-it, minimizar, arrastar e sobrepor.</p>
+          <p>Pode ser usada para servir de referencia, enquanto armazena uma imagem, e uma legenda.</p>
+          <p>Diferente do post-it, pode ser redimensionada para uma melhor visualização, basta clicar sobre a ponta dobrada no canto inferior direito e arrastar.</p>
+        </div>
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center full">
+              <img src="../assets/documentacao/postit-sim/TestePolaroid.jpg" title="Tela com a janela do polaroid"
+                alt="Polaroid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+
+    <h2>Utilização</h2>
+    <ol>
+      <li>Clone este repositório:
+        <pre>git clone https://github.com/Ntzzn-Dev/Musync.git</pre>
+      </li>
+      <li>Para Android:
+        <pre>cd musync_and
+flutter pub get
+flutter run</pre>
+      </li>
+      <li>Para Desktop:
+        <pre>cd musync_dkt
+flutter pub get
+flutter run</pre>
+      </li>
+    </ol>
+
+    <h2>Tecnologias</h2>
+    <ul>
+      <li>Flutter (Dart)</li>
+      <li>SQLite (armazenamento local)</li>
+      <li>WebSocket (conexão via wi-fi local)</li>
+    </ul>
+
+    <h2>Contribuição</h2>
+    <p>Sinta-se à vontade para abrir issues ou sugerir melhorias!</p>
+
+    <h2>Log de versões</h2>
+    <ul>
+      <li><strong>v1.0</strong> → Versão inicial, player básico.</li>
+      <li><strong>v2.0</strong> → Download de músicas via YouTube.</li>
+      <li><strong>v3.0</strong> → Configurações avançadas, playlists e melhorias no modo aleatório.</li>
+      <li><strong>v4.0</strong> → Integração do desktop, e configuração para que o Android aja como controle remoto.
+      </li>
+      <li><strong>v5.0</strong> → Tela de Controle Aprimorado, apenas botões essenciais e grandes.</li>
+      <li><strong>v6.0</strong> → Tela de Swipe Left Right, para escolher músicas para uma playlist.</li>
+    </ul>
+    <p>Veja o changelog completo em <a href="CHANGELOG.md">CHANGELOG.md</a></p>
+
+  </div class="conteudo-doc">
+
+  <script src="../js/tabs.js"></script>
+  <script src="../js/images-gallery.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+
+</html>
