@@ -20,7 +20,7 @@
 
   img {
     border-radius: 16px;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
@@ -33,6 +33,7 @@
 
 .full {
   width: 98%;
+  display: flex;
 }
 
 .right {
@@ -109,6 +110,7 @@
   text-decoration: underline;
   cursor: pointer;
   color: crimson;
+  font-weight: bolder;
 }
 
 .img-select {

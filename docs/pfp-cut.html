@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pfp Cut - Documentação</title>
+  <link rel="icon" type="image/png" href="../assets/ntzzn_ic.png">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/doc.css">
+  <link rel="stylesheet" href="../css/images-gallery.css">
+</head>
+
+<body>
+  <img src="../assets/bg_img.png" class="bg" alt="Background">
+
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html" style="display: flex;"><img src="../assets/ntzzn_ic.png" width="25px"></a>
+      Documentação: Pfp Cut
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <nav id="menu">
+      <a href="../index.html">Início</a>
+      <a href="../projetos.html" class="active">Projetos</a>
+      <a href="../sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <div class="conteudo-doc">
+    <div class="apresentacao-doc">
+      <div class="info-apresentacao-doc">
+        <h1>Pfp Cut</h1>
+
+        <p><strong>Autor:</strong> Jhonatan | Nathan</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Ntzzn-Dev/pfp-cut"
+            target="_blank">https://github.com/Ntzzn-Dev/pfp-cut</a>
+        </p>
+        <p><strong>Page:</strong> <a href="https://ntzzn-dev.github.io/Pfp-cut/"
+            target="_blank">https://ntzzn-dev.github.io/Pfp-cut/</a>
+        </p>
+        <p><strong>Data:</strong> 25/09/2025</p>
+
+        <div class="badges">
+          <img class="badge"
+            src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+            alt="HTML">
+
+          <img class="badge"
+            src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+            alt="CSS">
+
+          <img class="badge"
+            src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+            alt="JavaScript">
+        </div>
+      </div>
+      <div class="desc-apresentacao-doc">
+        <h2>Descrição</h2>
+        <p>O <b>Pfp-cut</b> é uma ferramenta web leve, desenvolvida sem frameworks,
+        que permite carregar imagens locais, posicionar e redimensionar uma área
+        de recorte interativa e exportar o resultado em <b>PNG</b> ou <b>BMP</b>.</p>
+
+        <p>O projeto foi criado para explorar recursos nativos do navegador,
+        incluindo manipulação de imagens, Canvas API, FileReader API e geração
+        manual de arquivos BMP.</p>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <h2>Demonstração</h2>
+    <br>
+    <hr>
+
+    <div data-tab="windows" class="active">
+      <section id="tela-inicial">
+        <div class="info-demonstracao">
+          <h3>Tela inicial</h3>
+            <h4>Configurações</h4>
+            <p>Assim que o site é aberto, damos de cara com o recorte, ainda vazio. No canto superior direito temos algumas Configurações: </p>
+            <ul>
+              <li>Tema | Altera entre escuro e claro</li>
+              <li>Arredondar | Alterna entre o recorte quadrado e o redondo</li>
+              <li>Renomear | Altera o nome do arquivo final [Se estiver vazio usa o nome original]</li>
+              <li>Resolução de saida | Define o valor de altura e largura da imagem final</li>
+            </ul>
+            <h4>Recorte</h4>
+            <p>
+              Ja partindo para a ação principal do site temos 3 opções.<br>
+              Entrada -> Ajustar imagem<br>
+              Saida -> Baixar .PNG e .BMP
+            </p>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center full">
+              <img src="../assets/documentacao/pfp-img/index_light.png"
+                title="Tela inicial modo claro com recorte quadrado" alt="Tela inicial modo claro com recorte quadrado">
+            </div>
+            <div class="slide right full">
+              <img src="../assets/documentacao/pfp-img/index_dark.png"
+                title="Tela inicial modo escuro com recorte redondo" alt="Tela inicial modo escuro com recorte redondo">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="tela-recorte">
+        <div class="info-demonstracao">
+          <h3>Tela de recortes</h3>
+          <h4>Recorte</h4>
+          <p>Nessa tela é possível executar algumas ações:</p>
+          <ul>
+            <li>Canva > Exibe a imagem base no fundo, e o rastro do recorte, (parte mais clara), quando com recorte redondo, exibe a visão como no <span class="go-slide" data-slide="1" title="Mostrar recorte redondo">segundo slide</span></li>
+            <li>Arquivo > Procura a imagem base [.png, .jpeg, .jpg, .bmp]</li>
+            <li>Nome do arquivo > Exibe o nome original da imagem</li>
+            <li>Enviar > Envia a imagem exibida no canva para a <a href="#tela-inicial">tela inicial</a></li>
+            <li>Slider > Permite um controle mais preciso do zoom de recorte exibido no canva.</li>
+            <li>Mouse > Com o mouse podemos arrastar o recorte usando o ponteiro, ou aumentar o zoom usando o scroll</li>
+          </ul>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center full">
+              <img src="../assets/documentacao/pfp-img/cut_light.png"
+                title="Tela inicial modo claro com recorte quadrado" alt="Tela inicial modo claro com recorte quadrado">
+            </div>
+            <div class="slide right full">
+              <img src="../assets/documentacao/pfp-img/cut_dark.png"
+                title="Tela inicial modo escuro com recorte redondo" alt="Tela inicial modo escuro com recorte redondo">
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arrow prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="arrow next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="resultado">
+        <div class="info-demonstracao">
+          <h3>Resultado</h3>
+          <h4>Imagem recortada</h4>
+          <p>Ao final do recorte, clicando em enviar, voltamos para a tela inicial.</p>
+          <p>A prévia que aparece no centro é a mesma que será salva, ou em BMP ou em PNG.</p>
+          <p>O ultimo passo é baixar a imagem, podendo sempre reajustar o zoom antes.</p>
+        </div>
+
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide center full">
+              <img src="../assets/documentacao/pfp-img/result_dark.png"
+                title="Tela com mais de um post-it" alt="Varios post-its">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <script src="../js/tabs.js"></script>
+  <script src="../js/images-gallery.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+
+</html>
