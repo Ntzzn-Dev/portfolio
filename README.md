@@ -18,6 +18,6 @@ Meu portfólio pessoal, para mostrar meus projetos do Github.
 ## Documentações
 
 -   [ ] brecho-sib > final
--   [ ] postit-sim > final
 -   [ ] musync > continuação
+-   [X] postit-sim
 -   [X] pfp-cut
